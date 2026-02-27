@@ -1,0 +1,19 @@
+#include <stdio.h>
+	
+	int main (){
+		int v1,v2;
+		
+		printf("dois valores:");
+		scanf("%d %d",&v1,&v2);
+		
+		do{
+		    
+		   printf("segundo valor");
+		   scanf("%d", &v2);
+		}while(v2<=v1);
+		
+		    printf("valores n1 %d e n2 %d",v1,v2);
+		
+	    return 0;
+	    
+	}
