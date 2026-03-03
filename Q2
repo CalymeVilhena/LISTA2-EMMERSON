@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    
+    long double produto = 1;
+    
+    for(int i = 1; i <= 100; i++) {
+        produto = produto * i;
+    }
+    
+    printf("Produto = %.0Lf\n", produto);
+
+    return 0;
+}
