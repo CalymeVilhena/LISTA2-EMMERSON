@@ -19,4 +19,9 @@ int main()
     }while(idade != -1);
         media = soma / pessoas;
         printf("Media das idades: %.2f\n", media);
-    
+    }else{
+        printf("Nenhuma idade valida foi digitada.\n");
+    }
+
+    return 0;
+}
