@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int idade, pessoas = 0;
+    float media = 0, soma = 0;
+
+    printf("IDADES::::::::::::::::\n");
+
+    do{
+        printf("Idade: ");
+        scanf("%d", &idade);
+
+        if(idade != -1){
+            soma = soma + idade;
+            pessoas++;
+        }
+
+    }while(idade != -1);
+        media = soma / pessoas;
+        printf("Media das idades: %.2f\n", media);
+    
