@@ -1,0 +1,35 @@
+//biblioteca
+#include <stdio.h>
+//funçao principal
+int main()
+{
+    //declaração de variaveis
+    char sexo;
+    float media=0,altura,alturaF,soma=0;
+    int mulheres=0;
+    
+    //laço vai repetir 50 vezes
+    for(int i=0;i<=50;i++){
+        
+       //entrada de dados 
+       printf("genero (M) ou (F):");
+       scanf(" %c",&sexo);
+       
+       printf("altura: ");
+       scanf("%f",&altura);
+       
+       //condição caso seja mulher 
+       if(sexo == 'F' || sexo =='f'){
+           alturaF=altura;
+           soma=soma+alturaF;
+           mulheres++;
+       }
+       
+    }
+        media=soma/mulheres;
+        
+    printf("mulheres: %d \n",mulheres);
+    printf("media: %.2f",media);
+    
+    return 0;
+}
