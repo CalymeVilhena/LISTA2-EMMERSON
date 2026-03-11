@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    
+    int N, digito;
+
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &N);
+
+    printf("Numero invertido: ");
+
+    while(N > 0){
+        digito = N % 10;   // pega o ultimo digito
+        printf("%d", digito);
+        // remove o ultimo digito
+        N = N / 10; 
+    }
+
+    return 0;
+}
