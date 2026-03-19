@@ -1,0 +1,17 @@
+#include <stdio.h>
+    int main(){
+        float nota;
+        int i,aprovados=1;
+
+        for(i=0; i<=5;i++){
+            printf("Nota:");
+            scanf("%f",&nota);
+
+            if(nota>=6){
+                aprovados++;
+            }
+        }
+        printf("Qtde de aprovados: %d",aprovados);
+    return 0;
+
+    }
