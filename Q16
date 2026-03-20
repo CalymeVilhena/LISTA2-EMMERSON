@@ -1,0 +1,15 @@
+#include <stdio.h>
+    int main(){
+        int n;
+        
+        printf("digite um numero: ");
+        scanf("%d", &n);
+        
+        if(n%n==0 || n%1==n){
+            printf("é primo");
+        }else{
+            printf("nao eh primo");
+        }
+       
+        return 0;
+    }
