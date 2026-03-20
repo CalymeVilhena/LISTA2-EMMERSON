@@ -1,0 +1,30 @@
+#include <stdio.h>
+    int main(){
+        
+       int impar,par;
+       int n,i;
+       int proximo=0,primeiro=1,segundo=1;
+       
+       printf("defina a quantidade de termos: ");
+       scanf("%d",&n);
+       printf("1 1 ");
+       
+       for(i=3;i<=n;i++){
+           
+           if(i%2==0){
+               
+               proximo=primeiro-segundo;
+               
+           }else{
+               
+               proximo=primeiro+segundo;
+           }
+           
+           primeiro=segundo;
+           segundo=proximo;
+           
+           printf("%d ",proximo);
+       }
+       
+        return 0;
+    }
