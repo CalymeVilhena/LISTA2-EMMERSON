@@ -1,0 +1,17 @@
+#include <stdio.h>
+    int main(){
+        int proximo=1,primeiro=0,segundo=1,n,i;
+
+        printf("Defina a quantidade de termos: ");
+        scanf("%d",&n);
+
+        for(i=0;i<=n;i++){
+         
+         printf(" %d ",primeiro);
+          
+          proximo=primeiro+segundo;
+          primeiro=segundo;
+          segundo=proximo;
+        }
+        return 0;
+    }
